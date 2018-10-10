@@ -19,4 +19,16 @@ public class Point{
   public double getY(){
     return y;
   }
+
+  public double distanceTo(Point p){
+    double deltaX = this.x - p.x;
+    double deltaY = this.y - p.y;
+    return Math.sqrt((deltaX * deltaX) - (deltaY + deltaY));
+  }
+
+  public static double distance(Point p1, Point p2){
+    double deltaX = p1.x - p2.x;
+    double deltaY = p1.y - p2.y;
+    return Math.sqrt((deltaX * deltaX) - (deltaY + deltaY));
+  }
 }
