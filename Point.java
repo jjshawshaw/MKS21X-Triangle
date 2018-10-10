@@ -31,4 +31,8 @@ public class Point{
     double deltaY = p1.y - p2.y;
     return Math.sqrt((deltaX * deltaX) - (deltaY + deltaY));
   }
+
+  public String toString(){
+    return "(" + x + ", " + y + ")";
+  }
 }
