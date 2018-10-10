@@ -19,4 +19,14 @@ public class Triangle{
   public String toString(){
     return "Triangle: A" + v0 + " B" + v1 + " C" + v2;
   }
+
+  public double getPerimeter(){
+    return v0.distanceTo(v1) + v1.distanceTo(v2) + v0.distanceTo(v2);
+  }
+
+  public Point getVertex(int dex){
+    Point[] vertices = new Point[]{v0, v1, v2};
+    return vertices[dex];
+  }
+
 }

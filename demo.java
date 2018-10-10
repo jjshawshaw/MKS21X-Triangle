@@ -22,5 +22,7 @@ public class demo{
     Triangle T1 = new Triangle(0, 1, 2, 3, 4, 5);
     System.out.println(T0);
     System.out.println(T1);
+    System.out.println(T0.getPerimeter());
+    System.out.println(T1.getVertex(1));
  }
 }
