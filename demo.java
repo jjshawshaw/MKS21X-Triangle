@@ -24,5 +24,7 @@ public class demo{
     System.out.println(T1);
     System.out.println(T0.getPerimeter());
     System.out.println(T1.getVertex(1));
+    T1.setVertex(2, P3);
+    System.out.println(T1);
  }
 }
